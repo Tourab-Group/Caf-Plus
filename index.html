@@ -37,38 +37,38 @@
   </head>
   <body>
     <!--~~~~~~~~~~~~~~~ Header ~~~~~~~~~~~~~~~-->
-    <header class="bg-darkColor fixed top-0 left-0 w-full z-50" id="header">
-      <nav class="container relative flex justify-between items-center">
+    <header class="bg-primaryColor fixed top-0 left-0 w-full z-50 py-3 lg:py-0" id="header">
+      <nav class="md:container relative flex justify-between items-center">
         <div>
           <a href="#">
             <img src="/img/cafeplus.png" width="80" height="94">
           </a>
         </div>
 
-        <div class="nav-links hidden transition-all ease-in-out duration-500 md:static absolute bg-darkColor md:min-h-fit min-h-[100vh] left-0 top-[-100%] w-full md:w-auto md:flex items-center px-5 pt-5 md:pt-0">
+        <div class="nav-links hidden transition-all ease-in-out duration-500 md:static absolute bg-primaryColor md:min-h-fit min-h-[100vh] left-0 top-[-100%] w-full md:w-auto md:flex items-center px-5 pt-5 md:pt-0">
           <ul class="flex md:flex-row flex-col items-center md:gap-[4vw] gap-8">
             <li>
-              <a href="#home" class="nav__link hover:text-primaryColor ease-in duration-200">Acceuil</a>
+              <a href="#home" class="nav__lin hover:text-secondaryColor ease-in duration-200">Acceuil</a>
             </li>
             <li>
-              <a href="#about" class="nav__link hover:text-primaryColor ease-in duration-200">A propos</a>
+              <a href="#about" class="nav__link hover:text-secondaryColor ease-in duration-200">A propos</a>
             </li>
             <li>
-              <a href="#menu" class="nav__link hover:text-primaryColor ease-in duration-200">Menu</a>
+              <a href="#menu" class="nav__link hover:text-secondaryColor ease-in duration-200">Menu</a>
             </li>
             <li>
-              <a href="#review" class="nav__link hover:text-primaryColor ease-in duration-200">Avis Client</a>
+              <a href="#review" class="nav__link hover:text-secondaryColor ease-in duration-200">Avis Client</a>
             </li>
 
             <li>
-              <a href="#contact" class="md:hidden nav__link btn-primary py-[10px] px-[20px] capitalize text-center cursor-pointer rounded-md ease-linear duration-200">Contacter</a>
+              <a href="#contact" class="md:hidden nav__link btn-primary py-[10px] px-[20px] text-center cursor-pointer rounded-md ease-linear duration-200">Contactez nous</a>
             </li>
           </ul>
         </div>
 
-        <div class="flex items-center space-x-2">
-          <a href="#contact" class="hidden md:block btn-primary py-[10px] px-[20px] capitalize text-center cursor-pointer rounded-md ease-linear duration-200">Contacter</a>
-          <i onclick="onToggleMenu()" class="toggle-button text-3xl fa-solid fa-bars text-white hover:text-primaryColor cursor-pointer ease-in duration-200 md:hidden"></i>
+        <div class="flex items-center space-x-2 mr-3 md:mr-0">
+          <a href="#contact" class="hidden md:block btn-primary py-[10px] px-[20px] capitalize text-center cursor-pointer rounded-md ease-linear duration-200">Contactez nous</a>
+          <i onclick="onToggleMenu()" class="toggle-button text-3xl fa-solid fa-bars text-white hover:text-secondaryColor cursor-pointer ease-in duration-200 md:hidden"></i>
         </div>
       </nav>
     </header>
@@ -79,54 +79,54 @@
         <div class="list">
           <div class="item active">
             <img src="img/bgco-13.jpeg">
-            <div class="content">
+            <!-- <div class="content">
               <p>Burger & Co</p>
               <h2>Le rendez-vous des gourmands</h2>
               <p>
                 Burger&co le meilleur fast-food de la ville où chaque menu est une explosion de délicieux goûts.
               </p>
-            </div>
+            </div> -->
           </div>
           <div class="item">
             <img src="img/bgco-9.jpeg">
-            <div class="content">
+            <!-- <div class="content">
               <p>Espace de jeux</p>
               <h2>Pour les plus petits</h2>
               <p>
                 Les plus petits sont les bienvenus pour déguster notre menu kids et aussi profiter de notre aire de jeux pour des moments fun.
               </p>
-            </div>
+            </div> -->
           </div>
           <div class="item">
             <img src="img/bgco-11.jpeg">
-            <div class="content">
+            <!-- <div class="content">
               <p>Fast-Food</p>
               <h2>Votre nouveau fast-food</h2>
               <p>
                 Burger&co le meilleur fast-food de la ville où chaque menu est une explosion de délicieux goûts. Besoin d'une pause gourmande vous savez où aller <br />
                 Hamdallaye ACI 2000 près du palais des sports
               </p>
-            </div>
+            </div> -->
           </div>
           <div class="item">
             <img src="img/bgco-4.jpeg">
-            <div class="content">
+            <!-- <div class="content">
               <p>Cadre</p>
               <h2>Prêt à vous recevoir</h2>
               <p>
                 Succombez au vrai goût du burger. Nous vous proposons une variété de burgers délicieux qui raviront vos papilles.
               </p>
-            </div>
+            </div> -->
           </div>
           <div class="item">
             <img src="img/bgco-5.jpeg">
-            <div class="content">
+            <!-- <div class="content">
               <p>Acceuil</p>
               <h2>Une pause bien méritée</h2>
               <p>
                 Avec un service chaleureux vous vous sentirez comme à la maison
               </p>
-            </div>
+            </div> -->
           </div>
         </div>
         <!-- button arrows -->
@@ -135,23 +135,38 @@
             <button id="next">></button>
         </div>
         <!-- thumbnail -->
-        <div class="thumbnail no-scrollbar">
+        <!-- <div class="thumbnail">
             <div class="item active">
                 <img src="img/bgco-13.jpeg">
+                <div class="content">
+                  Burger & Co
+                </div>
             </div>
             <div class="item">
                 <img src="img/bgco-9.jpeg">
+                <div class="content">
+                  Espace de jeux
+                </div>
             </div>
             <div class="item">
                 <img src="img/bgco-11.jpeg">
+                <div class="content">
+                  Fast-Food
+                </div>
             </div>
             <div class="item">
                 <img src="img/bgco-4.jpeg">
+                <div class="content">
+                  Cadre
+                </div>
             </div>
             <div class="item">
                 <img src="img/bgco-5.jpeg">
+                <div class="content">
+                  Acceuil
+                </div>
             </div>
-        </div>
+        </div> -->
       </div>
       <!--~~~~~~~~~~~~~~~ Home ~~~~~~~~~~~~~~~-->
       <section id="home">
@@ -164,98 +179,48 @@
             <h1 class="home__title">Une matinée sans café,
               c'est comme dormir</h1>
             <div class="separator mx-auto md:mx-0"></div>
-            <p class="paragraph"> 
-              Plaisir matinal incarné dans chaque bouchée </p>
-            <div class="text-lg flex items-center justify-center gap-4 py-10 md:justify-start md:gap-20">
-              <div class="text-center font-medium">
-                <i class="fa-solid fa-mug-hot text-primaryColor text-4xl"></i>
-                <br />
-                Délicieux
-              </div>
-
-              <div class="text-center font-medium">
-                <i class="fa-solid fa-cookie text-primaryColor text-4xl"></i>
-                <br />
-                Frais
-              </div> 
-
-              <div class="text-center font-medium">
-                <i class="fa-solid fa-cheese text-primaryColor text-4xl"></i>
-                <br />
-                Gourmand
-              </div>
+            <div>
+              <p class="paragraph"> 
+                Plaisir matinal incarné dans chaque bouchée
+              </p>
             </div>
-
-            <a href="#about" class="btn btn-primary">Plus d'infos</a>
           </div>
-        </div>
-      </section>
-
-      <!--~~~~~~~~~~~~~~~ Category ~~~~~~~~~~~~~~~-->
-      <section id="category">
-        <div class="container">
-          <ul class="grid gap-2.5 md:grid-cols-2">
-            <li class="h-full list-none md:row-span-2">
-              <div class="category__card relative h-full overflow-hidden text-darkColor bg-primaryColor rounded-lg">
-                <img src="img/b-category.png" class="absolute -right-24 w-full h-full object-cover scale-100 ease-in-out duration-700">
-                <div class="absolute -translate-y-2/4 max-h-[calc(100%_-_30px)] top-2/4 inset-x-5">
-                  <h4 class="card__title capitalize">Dessert</h4>
-                  <p>Découvrez notre exquise création sucrée : une délicieuse tarte aux fruits frais, mariant la douceur des saveurs et la perfection croustillante de sa pâte fondante.</p>
-                </div>
-              </div>
-            </li>
-            <li class="h-[210px] list-none">
-              <div class="category__card relative h-full overflow-hidden bg-greenColor rounded-lg">
-                <img src="img/s-category.webp" class="absolute -right-24 w-full h-full object-cover scale-100 ease-in-out duration-700">
-                <div class="absolute -translate-y-2/4 max-h-[calc(100%_-_30px)] top-2/4 inset-x-5">
-                  <h4 class="card__title capitalize">Café</h4>
-                  <p>Explorez l'art du café avec notre service exceptionnel, offrant une expérience raffinée où la passion pour les grains de qualité se marie parfaitement à des saveurs exquises.</p>
-                </div>
-              </div>
-            </li>
-            <li class="h-[210px] list-none">
-              <div class="category__card relative h-full overflow-hidden bg-redColor rounded-lg">
-                <img src="img/coke-300.png" class="absolute top-3 -right-24 ease-in-out duration-700">
-                <div class="absolute -translate-y-2/4 max-h-[calc(100%_-_30px)] top-2/4 inset-x-5">
-                  <h4 class="card__title capitalize">Pâtisserie</h4>
-                  <p>Succomber à une délicieuse tentation sucrée, alliant expertise artisanale et saveurs exquises pour émerveiller vos papilles.</p>
-                </div>
-              </div>
-            </li>
-          </ul>
         </div>
       </section>
 
       <!--~~~~~~~~~~~~~~~ About ~~~~~~~~~~~~~~~-->
       <section id="about">
-        <div class="container flex flex-col gap-10 md:flex-row">
-          <div class="about__img flex-1">
-            <img src="img/about.jpeg" alt="about image" class="rounded-lg">
-          </div>
-
-          <div class="about__content flex-1">
-            <h2 class="section__title">A propos CaféPlus</h2>
-            <div class="separator"></div>
-            <p class="paragraph">Bienvenue à CaféPlus, un lieu convivial où l’on fusionne délicieusement la saveur et la détente. Notre cafétéria est conçue pour offrir une expérience gastronomique décontractée, alliant une ambiance chaleureuse à une variété de délices culinaires. Du petit-déjeuner copieux aux pauses café gourmandes, notre menu propose une sélection diversifiée de plats fraîchement préparés pour satisfaire tous les goûts.</p>
-            <!-- <ul class="grid grid-cols-1 sm:grid-cols-2 py-5 space-y-1">
-              <li class=" text-white"> 
-                <i class="fa-solid fa-check text-primaryColor"></i> 
-                Meilleur prix
-              </li>
-              <li class=" text-white">
-                <i class="fa-solid fa-check text-primaryColor"></i> 
-                Ingrédient frais
-              </li>
-              <li class=" text-white"> 
-                <i class="fa-solid fa-check text-primaryColor"></i> 
-                Meilleur service
-              </li>
-              <li class=" text-white">
-                <i class="fa-solid fa-check text-primaryColor"></i> 
-                Protocole sanitaire
-              </li>
-            </ul> -->
-            <!-- <a href="" class="btn btn-primary">About us</a> -->
+        <div class="container">
+          <div class="about__content flex-1 text-center">
+            <h2 class="section__title">TROUVEZ DU CAFE, DES DESSERTS ET PATISSERIES</h2>
+            <div class="separator mx-auto"></div>
+            <div class="flex flex-col space-y-4 md:flex-row md:space-x-4 md:space-y-0 my-12">
+              <div class="flex flex-col space-y-4">
+                <div class="relative flex items-center justify-center overflow-hidden shadow-xl h-56 max-w-80 md:w-80 rounded-2xl">
+                  <div class="absolute w-full h-full transition-all duration-500 ease-in-out transform bg-center bg-cover hover:scale-150" style="background-image: url('img/about_1.jpg')"></div>
+                </div>
+                <div class=" "> 
+                  Découvrez notre exquise création sucrée : une délicieuse tarte aux fruits frais, mariant la douceur des saveurs et la perfection croustillante de sa pâte fondante.
+                </div>
+              </div>
+              <div class="flex flex-col space-y-4">
+                <div class="relative flex items-center justify-center overflow-hidden shadow-xl h-56 max-w-80 md:w-80 rounded-2xl">
+                  <div class="absolute w-full h-full transition-all duration-500 ease-in-out transform bg-center bg-cover hover:scale-150" style="background-image: url('img/about_2.jpg')"></div>
+                </div>
+                <div class="">
+                  Explorez l'art du café avec notre service exceptionnel, offrant une expérience raffinée où la passion pour les grains de qualité se marie parfaitement à des saveurs exquises.</p>
+                </div>
+              </div>
+              <div class="flex flex-col space-y-4">
+                <div class="relative flex items-center justify-center overflow-hidden shadow-xl h-56 max-w-80 md:w-80 rounded-2xl">
+                  <div class="absolute w-full h-full transition-all duration-500 ease-in-out transform bg-center bg-cover hover:scale-150" style="background-image: url('img/about_3.jpg')"></div>
+                </div>
+                <div class=" "> 
+                  Succomber à une délicieuse tentation sucrée, alliant expertise artisanale et saveurs exquises pour émerveiller vos papilles.
+                </div>
+              </div>
+            </div>
+            <p class="paragraph !text-secondaryColor"> Un endroit tout-en-un pour votre meilleur goût</p>
           </div>
         </div>
       </section>
@@ -267,48 +232,48 @@
             <div class="max-w-md mx-auto">
               <h2 class="section__title">NOTRE MENU</h2>
               <div class="separator mx-auto"></div>
-              <p class="paragraph">Tous nos plats sont préparés avec des ingrédients frais et de qualité pour une expérience culinaire exceptionnelle.</p>
+              <p class="paragraph">Bienvenue à CaféPlus, un lieu convivial où l’on fusionne délicieusement la saveur et la détente. Notre cafétéria est conçue pour offrir une expérience gastronomique décontractée, alliant une ambiance chaleureuse à une variété de délices culinaires. Du petit-déjeuner copieux aux pauses café gourmandes, notre menu propose une sélection diversifiée de plats fraîchement préparés pour satisfaire tous les goûts.</p>
             </div>
 
             <div class="my-12">
               <ul class="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-4 lg:gap-12">
                 <li class="group cursor-pointer">
-                  <div class="h-56 grid place-items-center bg-darkColorLight rounded-3xl group-hover:bg-darkColor transition ease-linear duration-200 lg:h-40 border-primaryColor border-2">
+                  <div class="h-56 grid place-items-center bg-darkColorLight rounded-3xl group-hover:bg-secondaryColor transition ease-linear duration-200 lg:h-40 border-secondaryColor border">
                     <h4 class="card__title capitalize transition ease-linear duration-200 group-hover:text-white">Hot Beverages</h4>
                   </div>
                 </li>
                 <li class="group cursor-pointer">
-                  <div class="h-56 grid place-items-center bg-darkColorLight rounded-3xl group-hover:bg-darkColor transition ease-linear duration-200 lg:h-40 border-primaryColor border-2">
+                  <div class="h-56 grid place-items-center bg-darkColorLight rounded-3xl group-hover:bg-secondaryColor transition ease-linear duration-200 lg:h-40 border-secondaryColor border">
                     <h4 class="card__title capitalize transition ease-linear duration-200 group-hover:text-white">Cold Beverages</h4>
                   </div>
                 </li>
                 <li class="group cursor-pointer">
-                  <div class="h-56 grid place-items-center bg-darkColorLight rounded-3xl group-hover:bg-darkColor transition ease-linear duration-200 lg:h-40 border-primaryColor border-2">
+                  <div class="h-56 grid place-items-center bg-darkColorLight rounded-3xl group-hover:bg-secondaryColor transition ease-linear duration-200 lg:h-40 border-secondaryColor border">
                     <h4 class="card__title capitalize transition ease-linear duration-200 group-hover:text-white">FRAPPE FRUIT</h4>
                   </div>
                 </li>
                 <li class="group cursor-pointer">
-                  <div class="h-56 grid place-items-center bg-darkColorLight rounded-3xl group-hover:bg-darkColor transition ease-linear duration-200 lg:h-40 border-primaryColor border-2">
+                  <div class="h-56 grid place-items-center bg-darkColorLight rounded-3xl group-hover:bg-secondaryColor transition ease-linear duration-200 lg:h-40 border-secondaryColor border">
                     <h4 class="card__title capitalize transition ease-linear duration-200 group-hover:text-white">FRAPPE-CAFÉ</h4>
                   </div>
                 </li>
                 <li class="group cursor-pointer">
-                  <div class="h-56 grid place-items-center bg-darkColorLight rounded-3xl group-hover:bg-darkColor transition ease-linear duration-200 lg:h-40 border-primaryColor border-2">
+                  <div class="h-56 grid place-items-center bg-darkColorLight rounded-3xl group-hover:bg-secondaryColor transition ease-linear duration-200 lg:h-40 border-secondaryColor border">
                     <h4 class="card__title capitalize transition ease-linear duration-200 group-hover:text-white">GÂTEAU</h4>
                   </div>
                 </li>
                 <li class="group cursor-pointer">
-                  <div class="h-56 grid place-items-center bg-darkColorLight rounded-3xl group-hover:bg-darkColor transition ease-linear duration-200 lg:h-40 border-primaryColor border-2">
+                  <div class="h-56 grid place-items-center bg-darkColorLight rounded-3xl group-hover:bg-secondaryColor transition ease-linear duration-200 lg:h-40 border-secondaryColor border">
                     <h4 class="card__title capitalize transition ease-linear duration-200 group-hover:text-white">GLACE</h4>
                   </div>
                 </li>
                 <li class="group cursor-pointer">
-                  <div class="h-56 grid place-items-center bg-darkColorLight rounded-3xl group-hover:bg-darkColor transition ease-linear duration-200 lg:h-40 border-primaryColor border-2">
+                  <div class="h-56 grid place-items-center bg-darkColorLight rounded-3xl group-hover:bg-secondaryColor transition ease-linear duration-200 lg:h-40 border-secondaryColor border">
                     <h4 class="card__title capitalize transition ease-linear duration-200 group-hover:text-white">DONUTS</h4>
                   </div>
                 </li>
                 <li class="group cursor-pointer">
-                  <div class="h-56 grid place-items-center bg-darkColorLight rounded-3xl group-hover:bg-darkColor transition ease-linear duration-200 lg:h-40 border-primaryColor border-2">
+                  <div class="h-56 grid place-items-center bg-darkColorLight rounded-3xl group-hover:bg-secondaryColor transition ease-linear duration-200 lg:h-40 border-secondaryColor border">
                     <h4 class="card__title capitalize transition ease-linear duration-200 group-hover:text-white">MUFFIN</h4>
                   </div>
                 </li>
@@ -323,16 +288,14 @@
           <img class="absolute inset-0 h-full w-full object-cover"
               src="/img/serve.jpg"
               alt="serve">
-          <div class="absolute inset-0 bg-gradient-to-r from-[#1e2026] to-[#000000] opacity-40"></div>
+          <div class="absolute inset-0 bg-gradient-to-r from-[#1e2026] to-[#000000] opacity-10"></div>
         </div>
         <div class="container mx-auto px-6">
           <div class="flex justify-center">
               <div class="lg:w-2/3 text-center relative">
                   <div class="space-y-6 mb-10">
-                    <h2 class="section__title">NOUS VOUS SERVONS LE MEILLEUR</h2>
+                    <h2 class="section__title !text-white">NOUS VOUS SERVONS LE MEILLEUR</h2>
                     <div class="separator mx-auto"></div>
-                    <p class="paragraph text-white">
-                      Nous nous engageons à offrir une expérience gastronomique exceptionnelle en utilisant des ingrédients frais et en préparant chaque plat avec passion. Que vous optiez pour un burger classique, une salade fraîche ou un dessert délicieux, chaque bouchée reflète notre quête de perfection culinaire.</p>
                   </div>
               </div>
           </div>
@@ -352,67 +315,67 @@
           <div class="swiper py-10">
             <ul class="swiper-wrapper">
               <li class="swiper-slide">
-                <div class="flex flex-col gap-5 bg-darkColor rounded-lg p-6">
-                  <p class="paragraph">Ces étoiles sont pour la qualité, les peix et l'aire de jeux aussi, dans l'ensemble c'est bien spécialement à Bamako.</p>
+                <div class="flex flex-col gap-5 border-2 border-white bg-darkColor h-56 rounded-xl p-6">
+                  <p class="text-white text-xs leading-5">Ces étoiles sont pour la qualité, les peix et l'aire de jeux aussi, dans l'ensemble c'est bien spécialement à Bamako.</p>
                   <div class="flex items-center">
                     <img src="img/review-1.webp" alt="review image" class="w-12 h-12 rounded-full">
                     <!-- <div class="ml-2">
-                      <p class="font-oswald uppercase">John doe</p>
+                      <p class=" uppercase">John doe</p>
                       <p class="paragraph">Designer</p>
                     </div> -->
-                    <i class="fa-solid fa-quote-right text-4xl text-primaryColor ml-auto"></i>
+                    <i class="fa-solid fa-quote-right text-4xl text-secondaryColor ml-auto"></i>
                   </div>
                 </div>
               </li>
 
               <li class="swiper-slide">
-                <div class="flex flex-col gap-5 bg-darkColor rounded-lg p-6">
-                  <p class="paragraph">Nice place very good service recommended for all.</p>
+                <div class="flex flex-col gap-5 border-2 border-white bg-darkColor h-56 rounded-xl p-6">
+                  <p class="text-white text-xs leading-5">Nice place very good service recommended for all.</p>
                   <div class="flex items-center">
                     <img src="img/review-2.webp" alt="review image" class="w-12 h-12 rounded-full">
                     <!-- <div class="ml-2">
-                      <p class="font-oswald uppercase">John doe</p>
+                      <p class=" uppercase">John doe</p>
                     </div> -->
-                    <i class="fa-solid fa-quote-right text-4xl text-primaryColor ml-auto"></i>
+                    <i class="fa-solid fa-quote-right text-4xl text-secondaryColor ml-auto"></i>
                   </div>
                 </div>
               </li>
 
               <li class="swiper-slide">
-                <div class="flex flex-col gap-5 bg-darkColor rounded-lg p-6">
-                  <p class="paragraph">Le meilleur restaurant de Burger à Bamako, avec un service impéccable. <br>Allz y faire un tour, vous m'en direz des nouvelles.</p>
+                <div class="flex flex-col gap-5 border-2 border-white bg-darkColor h-56 rounded-xl p-6">
+                  <p class="text-white text-xs leading-5">Le meilleur restaurant de Burger à Bamako, avec un service impéccable. <br>Allz y faire un tour, vous m'en direz des nouvelles.</p>
                   <div class="flex items-center">
                     <img src="img/review-3.webp" alt="review image" class="w-12 h-12 rounded-full">
                     <!-- <div class="ml-2">
-                      <p class="font-oswald uppercase">John doe</p>
+                      <p class=" uppercase">John doe</p>
                     </div> -->
-                    <i class="fa-solid fa-quote-right text-4xl text-primaryColor ml-auto"></i>
+                    <i class="fa-solid fa-quote-right text-4xl text-secondaryColor ml-auto"></i>
                   </div>
                 </div>
               </li>
 
               <li class="swiper-slide">
-                <div class="flex flex-col gap-5 bg-darkColor rounded-lg p-6">
-                  <p class="paragraph">Un restaurant fast-food exceptionnel à Bamako avec la meilleur qualité de burger et déssert.</p>
+                <div class="flex flex-col gap-5 border-2 border-white bg-darkColor h-56 rounded-xl p-6">
+                  <p class="text-white text-xs leading-5">Un restaurant fast-food exceptionnel à Bamako avec la meilleur qualité de burger et déssert.</p>
                   <div class="flex items-center">
                     <img src="img/review-4.webp" alt="review image" class="w-12 h-12 rounded-full">
                     <!-- <div class="ml-2">
-                      <p class="font-oswald uppercase">John doe</p>
+                      <p class=" uppercase">John doe</p>
                     </div> -->
-                    <i class="fa-solid fa-quote-right text-4xl text-primaryColor ml-auto"></i>
+                    <i class="fa-solid fa-quote-right text-4xl text-secondaryColor ml-auto"></i>
                   </div>
                 </div>
               </li>
 
               <li class="swiper-slide">
-                <div class="flex flex-col gap-5 bg-darkColor rounded-lg p-6">
-                  <p class="paragraph">Wings bbq, hamburger, espace de jeux pour les enfants de moins de 8 ans... Tout ceci pour offrir le meilleur aux clients. Faites-y un tour. Je vous le recommande vivement.</p>
+                <div class="flex flex-col gap-5 border-2 border-white bg-darkColor h-56 rounded-xl p-6">
+                  <p class="text-white text-xs leading-5">Wings bbq, hamburger, espace de jeux pour les enfants de moins de 8 ans... Tout ceci pour offrir le meilleur aux clients. Faites-y un tour. Je vous le recommande vivement.</p>
                   <div class="flex items-center justify-center">
                     <img src="img/review-5.webp" alt="review image" class="w-12 h-12 rounded-full">
                     <!-- <div class="ml-2">
-                      <p class="font-oswald uppercase">John doe</p>
+                      <p class=" uppercase">John doe</p>
                     </div> -->
-                    <i class="fa-solid fa-quote-right text-4xl text-primaryColor ml-auto"></i>
+                    <i class="fa-solid fa-quote-right text-4xl text-secondaryColor ml-auto"></i>
                   </div>
                 </div>
               </li>
@@ -432,7 +395,7 @@
             </div>
           </div>
           <div class="space-y-4 md:flex-1">
-            <h2 class="section__title">COMPOSEZ LE <br> (+223) 82 63 63 63!</h2>
+            <h2 class="section__title">COMPOSEZ LE <br> + 233 82 63 63 63 !</h2>
             <div class="separator"></div>
             <p class="paragraph">Vous pouvez commander votre nourriture juste par téléphone</p>
           </div>
@@ -450,7 +413,7 @@
                   <img src="/img/cafeplus.png" width="140" height="78">
                 </a>
 
-                <p class="text-xs text-center">
+                <p class="text-xs font-thin text-center">
                   Rejoignez-nous pour découvrir une variété de délices, des burgers classiques aux desserts alléchants.
                 </p>
               </div>
@@ -458,27 +421,27 @@
 
             <li>
               <div class="flex flex-col gap-3">
-                <h3 class="text-xl uppercase font-oswald">Horaires d'ouvertures</h3>
-                <p class="text-xs hover:text-darkColorLight">Lundi-Vendredi : 08h00-22h00</p>
-                <p class="text-xs hover:text-darkColorLight">Week-End : 10h00-19h00</p>
+                <h3 class="text-xl uppercase text-textColor">Horaires d'ouvertures</h3>
+                <p class="text-[0.60rem] font-thin hover:text-secondaryColor">Lundi-Jeudi : 10h00-24h00</p>
+                <p class="text-[0.60rem] font-thin hover:text-secondaryColor">Vendredi-Dimanche : 10h00-01h00</p>
               </div>
             </li>
 
-            <li class="space-y-8">
+            <li class="space-y-8 mr-4">
               <div class="space-y-2">
-                <h3 class="text-xl uppercase font-oswald">téléphone</h3>
+                <h3 class="text-xl uppercase text-textColor">téléphone</h3>
 
-                <a href="tel:+23382636363" class="flex items-center gap-2 text-xs">
-                  <i class="fa-solid fa-phone text-lg text-darkColorLight"></i>
+                <a href="tel:+23382636363" class="flex items-center font-thin gap-2 text-[0.60rem]">
+                  <i class="fa-solid fa-phone text-lg text-secondaryColor"></i>
                   + 233 82 63 63 63
                 </a>
               </div>
 
               <div class="space-y-2">
-                <h3 class="text-xl uppercase font-oswald">email</h3>
+                <h3 class="text-xl uppercase text-textColor">email</h3>
 
-                <a href="mailto:burgerandcofnb@gmail.com" class="flex items-center gap-2 text-xs">
-                  <i class="fa-solid fa-envelope text-lg text-darkColorLight"></i>
+                <a href="mailto:burgerandcofnb@gmail.com" class="flex items-center font-thin gap-2 text-[0.60rem]">
+                  <i class="fa-solid fa-envelope text-lg text-secondaryColor"></i>
                   burgerandcofnb@gmail.com
                 </a>
               </div>
@@ -486,29 +449,29 @@
 
             <li class="space-y-8">
               <div class="space-y-2">
-                <h3 class="text-xl uppercase font-oswald">adresse</h3>
+                <h3 class="text-xl uppercase text-textColor">adresse</h3>
 
-                <p class="flex items-center gap-2 text-xs">
-                  <i class="fa-solid fa-location-dot text-lg text-darkColorLight"></i>
+                <p class="flex items-center gap-2 text-xs font-thin">
+                  <i class="fa-solid fa-location-dot text-lg text-secondaryColor"></i>
                   Hamdallaye ACI 2000, Bamako/Mali, Bamako, Mali
                 </p>
               </div>
 
               <div class="space-y-2">
-                <h3 class="text-xl uppercase font-oswald">suivez-nous</h3>
+                <h3 class="text-xl uppercase text-textColor">suivez-nous</h3>
 
                 <div class="space-x-3">
-                  <a href="https://www.facebook.com/people/Caf%C3%A9-Plus/100077676867300/" target="_blank">
-                    <i class="fa-brands fa-facebook-f text-lg cursor-pointer text-darkColorLight hover:-translate-y-1 ease-in duration-200"></i>
+                  <a href="https://www.facebook.com/BurgerAndCoAdmin/" target="_blank">
+                    <i class="fa-brands fa-facebook-f text-lg cursor-pointer text-secondaryColor hover:-translate-y-1 ease-in duration-200"></i>
                   </a>
-                  <a href="https://www.instagram.com/cafe._plus/" target="_blank">
-                    <i class="fa-brands fa-square-instagram text-lg cursor-pointer text-darkColorLight hover:-translate-y-1 ease-in duration-200"></i>
+                  <a href="https://www.instagram.com/burger_and_co_/" target="_blank">
+                    <i class="fa-brands fa-square-instagram text-lg cursor-pointer text-secondaryColor hover:-translate-y-1 ease-in duration-200"></i>
                   </a>
                   <a href="https://www.tiktok.com/@burger_and_co_?lang=fr" target="_blank">
-                    <i class="fa-brands fa-tiktok text-lg cursor-pointer text-darkColorLight hover:-translate-y-1 ease-in duration-200"></i>
+                    <i class="fa-brands fa-tiktok text-lg cursor-pointer text-secondaryColor hover:-translate-y-1 ease-in duration-200"></i>
                   </a>
                   <a href="https://www.snapchat.com/add/burger_andco" target="_blank">
-                    <i class="fa-brands fa-snapchat text-lg cursor-pointer text-darkColorLight hover:-translate-y-1 ease-in duration-200"></i>
+                    <i class="fa-brands fa-snapchat text-lg cursor-pointer text-secondaryColor hover:-translate-y-1 ease-in duration-200"></i>
                   </a>
                 </div>
               </div>
@@ -516,8 +479,8 @@
           </ul>
 
           <div class="flex flex-col items-center border-t border-darkColorLight py-5 md:flex-row md:justify-between">
-            <p class="paragraph">Tourab Group</p>
-            <p class="paragraph">Copyright © 2024. All rights reserved.</p>
+            <p class="text-white text-xs font-thin leading-5">Tourab Group</p>
+            <p class="text-white text-xs font-thin leading-5">Copyright © 2024. All rights reserved.</p>
           </div>
         </div>
       </section>

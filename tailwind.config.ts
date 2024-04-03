@@ -10,16 +10,9 @@ module.exports = {
     },
     extend: {
       colors: {
-        primaryColor: '#4484bc',
-        primaryColorLight: "#010d78",
-        secondaryColor: '#edcf2b',
-        paragraphColor: '#c0c0c0',      
-        whiteColor: '#fff',
-        blackColor: "#000",
-        greenColor: "#007936",
-        redColor: "#cc3433",
-        darkColor: '#6c4526',
-        darkColorLight: "#efb863",
+        primaryColor: '#efb863',
+        secondaryColor: '#4483bb',
+        textColor: '#6c4526'
       },
       keyframes: {
         move: {
@@ -46,8 +39,7 @@ module.exports = {
       }
     },
     fontFamily: {
-      oswald: ['Oswald', 'sans-serif'],
-      poppins: ['Poppins', 'sans-serif']
+      lemonMilk: ['LEMON MILK', 'sans-serif'],
     }
   },
   plugins: [],
